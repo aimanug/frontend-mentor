@@ -1,3 +1,3 @@
 # Frontend Mentor Challenge Repository
 
-- [Order Summary Card](./order-summary-component/index.html)
+- [Order Summary Card](https://aimanug.github.io/frontend-mentor/order-summary-component/)
