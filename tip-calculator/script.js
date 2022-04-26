@@ -3,7 +3,8 @@ const tipValue = document.querySelectorAll(".tip-value");
 const customTip = document.querySelector("#custom-tip");
 const people = document.getElementById("people");
 const error = document.querySelector(".error");
-const totalValue = document.querySelectorAll("#total-value");
+const tipAmount = document.querySelector(".tip-amount");
+const totalValue = document.querySelector(".total");
 const reset = document.getElementById("reset");
 
 let billVal = 0;
@@ -68,8 +69,8 @@ function calculate() {
     let tip = (billVal * tipVal) / peopleVal;
     let totalAmount = (billVal * (tipVal + 1)) / peopleVal;
 
-    totalValue[0].innerHTML = "$" + tip.toFixed(2);
-    totalValue[1].innerHTML = "$" + totalAmount.toFixed(2);
+    tipAmount.innerHTML = "$" + tip.toFixed(2);
+    totalValue.innerHTML = "$" + totalAmount.toFixed(2);
   }
 }
 
