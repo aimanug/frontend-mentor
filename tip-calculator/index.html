@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>spli<br />tter</h1>
+    <div class="card">
+      <div class="left">
+        <div class="bill-sec">
+          <p class="label">Bill</p>
+          <input type="number" class="input-bill" id="bill" placeholder="0" />
+        </div>
+        <div class="tip-sec">
+          <p class="label">Select Tip %</p>
+          <div class="tip-list">
+            <button class="tip-value">5%</button>
+            <button class="tip-value">10%</button>
+            <button class="tip-value active">15%</button>
+            <button class="tip-value">25%</button>
+            <button class="tip-value">50%</button>
+            <input type="number" placeholder="Custom" class="custom-tip" id="custom-tip" />
+          </div>
+        </div>
+        <div class="people-sec">
+          <p class="error"></p>
+          <p class="label">Number of People</p>
+          <input type="number" class="input-people" id="people" placeholder="1" />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="right-item">
+          <div class="right-label">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="price-label">
+            <p class="tip-amount" id="total-value">$0.00</p>
+          </div>
+        </div>
+
+        <div class="right-item">
+          <div class="right-label">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="price-label">
+            <p class="total" id="total-value">$0.00</p>
+          </div>
+        </div>
+
+        <button class="reset" id="reset">Reset</button>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
